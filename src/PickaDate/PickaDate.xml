@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="PickaDate.widget.PickaDate" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>PickaDate</name>
+    <description>The description of this widget.</description>
+
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAInSURBVDhPnZPfS5NhFMdPdhPMObVy1W4qu3AVQl5HYDdrFyH9A1GRFaWJRGHmj4wyiuhCdEZU5tZcOnHvpmlK5MaYFGkMy6u1WKJFKXgj3X4757wLdtGF64HD+TznPOf7vs95z0vgdaJvBvs6J7D//uSGTM7W9CWkFHT8aQKWphB23BzNywqvh+B+HAc5WdHePopdHWN52U4WEU+VD6ZU0XFrTE2Cjqzl8t+cxphFYPftcVDVwzegxiDogh90KQBqGATVvwTVsTUOmSyxcy9g5yJbswGq9fIVDOwRgdKWMJ68/6oNiWdW1Q/PL+Nt+peydzaDj0tryoUseKRrWvlyKIkSrqWiGwb8c4sadDaNILLwQ9nRMIRoekV589Vh9b2JL0itrCvTqefYy1+DbCzgm/2mwS0XB/DsQ0aZzvRjIGkKC/fMpJVlVdyZQElr2LxCroC1PgDfnMmban0IflpSLjjvR8ureWVZlitB2LmZ2kQR8OYIeP8hQCwgqyueUp9aXQed7kc5vwlZuavG52VN2OoCMBa+Kxec9WEq9VN5ce23eqrxYDBpip70vkNpawRUwYN04O5ruLujHAij8t4k3D1RFHOHD3HuMH9mF+8P8tOKOW+5NgJX9zRcj2Io4wHUQdrWFlE1GY6y9ix3mLw1m9vOLEMkZ2QvNdpEJz/xf0dZJpSO8Q9hbQ5pIB8r4t4d7Y1Bf+dqT0znu7xzfEMmZ6s9Ua4E/gAt0qbXecrRPQAAAABJRU5ErkJggg==</icon>
+
+    <properties>
+        <property key="dateTime" type="attribute">
+            <caption>DateTime</caption>
+            <category>general</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="DateTime" />
+            </attributeTypes>
+        </property>
+        <property key="dateFormat" type="string" required="true" defaultValue="">
+            <caption>DateFormat</caption>
+            <category>general</category>
+            <description></description>
+        </property>
+        <property key="entity" type="entity" isPath="optional" allowNonPersistableEntities="true" pathType="reference">
+            <caption>Entity</caption>
+            <category>Data source</category>
+            <description>The Color entity to use.</description>
+        </property>
+        <property key="disabledDateAttribute" type="attribute" entityProperty="entity">
+            <caption>Disabled date attr</caption>
+            <category>general</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="DateTime" />
+            </attributeTypes>
+        </property>
+        <property key="getDatesMicroflow" type="microflow" required="false">
+            <caption>Microflow</caption>
+            <category>general</category>
+            <description></description>
+            <returnType type="Object" isList="true" entityProperty="entity"/>
+        </property>
+    </properties>
+</widget>

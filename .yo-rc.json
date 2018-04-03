@@ -1,0 +1,14 @@
+{
+  "generator-mendix": {
+    "promptValues": {
+      "copyright": "EIG 2018",
+      "license": "Apache 2",
+      "author": "<You>",
+      "boilerplate": "empty",
+      "widgetoptions": [
+        "templates",
+        "jquery"
+      ]
+    }
+  }
+}
